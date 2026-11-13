@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Collections | Hailey Fang — U.S. Regional Director, NOT JUST A LABEL</title>
+    <meta name="description"
+        content="Explore the six editorial fashion collection concepts by Hailey Fang — Modern Elegance, Urban Sophistication, Timeless Femininity, Contemporary Tailoring, Minimalist Luxury, and Seasonal Statements.">
+
+    <!-- Open Graph / Meta -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Hailey Fang Professional Profile">
+    <meta property="og:title" content="Fashion Collections | Hailey Fang — NOT JUST A LABEL">
+    <meta property="og:description"
+        content="Curated editorial fashion portfolio featuring six distinct collection concepts in modern women's fashion, directed by Hailey Fang.">
+    <meta property="og:image" content="preview-image.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Montserrat:wght@200;300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="collections-page">
+    <!-- Navigation Bar -->
+    <nav class="nav-container scrolled" id="mainNav">
+        <div class="nav-content">
+            <a href="index.html" class="logo">Hailey <span>Fang</span></a>
+            <button class="nav-toggle" aria-label="Toggle Navigation" onclick="toggleNav()">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html"><i class="fas fa-arrow-left nav-back-icon"></i> Home</a></li>
+                <li><a href="index.html#designer">Profile</a></li>
+                <li><a href="index.html#philosophy">Philosophy</a></li>
+                <li><a href="collections.html" class="active-page">Collections</a></li>
+                <li><a href="index.html#brand">Company</a></li>
+                <li><a href="index.html#media">Showcase</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Collections Header / Hero Banner -->
+    <header class="collections-hero">
+        <div class="collections-hero-inner">
+            <div class="collections-breadcrumb">
+                <a href="index.html"><i class="fas fa-home"></i> Home</a>
+                <span class="sep">/</span>
+                <span class="current">Collections</span>
+            </div>
+            <div class="section-tag">EDITORIAL PORTFOLIO & ATELIER CONCEPTS</div>
+            <h1 class="collections-hero-title">Fashion Collections</h1>
+            <div class="gold-divider"></div>
+            <p class="collections-hero-lead">
+                An editorial portfolio of six distinct collection concepts in modern women's fashion.
+                Under Hailey Fang's design direction at NOT JUST A LABEL, each concept explores the dialogue between
+                sculptural form, delicate craftsmanship, and small-batch production integrity.
+            </p>
+            <div class="collections-disclaimer">
+                <i class="fas fa-info-circle"></i> Editorial design portfolio concepts curated for aesthetic and
+                craftsmanship presentation.
+            </div>
+        </div>
+    </header>
+
+    <!-- Collections Grid Section -->
+    <main class="collections-grid-section">
+        <div class="collections-grid-container">
+
+            <!-- Collection 1: Modern Elegance -->
+            <article class="collection-item" onclick="openDedicatedModal('modern-elegance')">
+                <div class="collection-image-box">
+                    <img src="collection-1-modern-elegance.png" alt="Collection 01 — Modern Elegance Haute Couture"
+                        loading="lazy">
+                    <div class="collection-overlay">
+                        <span class="collection-overlay-btn">
+                            <i class="fas fa-eye"></i> View Collection
+                        </span>
+                    </div>
+                    <span class="collection-number-badge">N° 01</span>
+                </div>
+                <div class="collection-card-body">
+                    <div class="collection-category">Haute Couture Eveningwear</div>
+                    <h2 class="collection-card-title">Modern Elegance</h2>
+                    <p class="collection-card-desc">
+                        Sculptural crystal-embellished silhouettes, architectural capes, and flowing drape balancing
+                        classical grace with avant-garde modernism.
+                    </p>
+                    <div class="collection-action">
+                        <span>Explore Collection</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Collection 2: Urban Sophistication -->
+            <article class="collection-item" onclick="openDedicatedModal('urban-sophistication')">
+                <div class="collection-image-box">
+                    <img src="collection-2-urban-sophistication.png"
+                        alt="Collection 02 — Urban Sophistication Metropolitan Outerwear" loading="lazy">
+                    <div class="collection-overlay">
+                        <span class="collection-overlay-btn">
+                            <i class="fas fa-eye"></i> View Collection
+                        </span>
+                    </div>
+                    <span class="collection-number-badge">N° 02</span>
+                </div>
+                <div class="collection-card-body">
+                    <div class="collection-category">Metropolitan Outerwear & Tailoring</div>
+                    <h2 class="collection-card-title">Urban Sophistication</h2>
+                    <p class="collection-card-desc">
+                        Architectural powder-blue trench coats, refined draping, and contemporary layering tailored for
+                        the dynamic global metropolis.
+                    </p>
+                    <div class="collection-action">
+                        <span>Explore Collection</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Collection 3: Timeless Femininity -->
+            <article class="collection-item" onclick="openDedicatedModal('timeless-femininity')">
+                <div class="collection-image-box">
+                    <img src="collection-3-timeless-femininity.png"
+                        alt="Collection 03 — Timeless Femininity Embroidered Silk Gown" loading="lazy">
+                    <div class="collection-overlay">
+                        <span class="collection-overlay-btn">
+                            <i class="fas fa-eye"></i> View Collection
+                        </span>
+                    </div>
+                    <span class="collection-number-badge">N° 03</span>
+                </div>
+                <div class="collection-card-body">
+                    <div class="collection-category">East-West Embroidered Silk</div>
+                    <h2 class="collection-card-title">Timeless Femininity</h2>
+                    <p class="collection-card-desc">
+                        Botanical hand-embroidery on fluid lustrous silk, asymmetric hemlines, and delicate craftsmanship
+                        bridging heritage artistry with poise.
+                    </p>
+                    <div class="collection-action">
+                        <span>Explore Collection</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Collection 4: Contemporary Tailoring -->
+            <article class="collection-item" onclick="openDedicatedModal('contemporary-tailoring')">
+                <div class="collection-image-box">
+                    <img src="Contemporary Tailoring.png"
+                        alt="Collection 04 — Contemporary Tailoring Executive Suiting" loading="lazy">
+                    <div class="collection-overlay">
+                        <span class="collection-overlay-btn">
+                            <i class="fas fa-eye"></i> View Collection
+                        </span>
+                    </div>
+                    <span class="collection-number-badge">N° 04</span>
+                </div>
+                <div class="collection-card-body">
+                    <div class="collection-category">Executive Suiting & Separates</div>
+                    <h2 class="collection-card-title">Contemporary Tailoring</h2>
+                    <p class="collection-card-desc">
+                        Sharp shoulder structures, tailored wool-crepe blazers, and wide-leg fluid trousers crafted for
+                        confident modern leadership.
+                    </p>
+                    <div class="collection-action">
+                        <span>Explore Collection</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Collection 5: Minimalist Luxury -->
+            <article class="collection-item" onclick="openDedicatedModal('minimalist-luxury')">
+                <div class="collection-image-box">
+                    <img src="Minimalist Luxury.png"
+                        alt="Collection 05 — Minimalist Luxury Neutral Monochrome" loading="lazy">
+                    <div class="collection-overlay">
+                        <span class="collection-overlay-btn">
+                            <i class="fas fa-eye"></i> View Collection
+                        </span>
+                    </div>
+                    <span class="collection-number-badge">N° 05</span>
+                </div>
+                <div class="collection-card-body">
+                    <div class="collection-category">Refined Monochrome & Pure Form</div>
+                    <h2 class="collection-card-title">Minimalist Luxury</h2>
+                    <p class="collection-card-desc">
+                        Pristine double-breasted suiting, neutral earth palettes, and uncompromised fabric purity
+                        reflecting understated modern opulence.
+                    </p>
+                    <div class="collection-action">
+                        <span>Explore Collection</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Collection 6: Seasonal Statements -->
+            <article class="collection-item" onclick="openDedicatedModal('seasonal-statements')">
+                <div class="collection-image-box">
+                    <img src="Seasonal Statements.png"
+                        alt="Collection 06 — Seasonal Statements Imperial Velvet Couture" loading="lazy">
+                    <div class="collection-overlay">
+                        <span class="collection-overlay-btn">
+                            <i class="fas fa-eye"></i> View Collection
+                        </span>
+                    </div>
+                    <span class="collection-number-badge">N° 06</span>
+                </div>
+                <div class="collection-card-body">
+                    <div class="collection-category">Dramatic Runway & Heritage Couture</div>
+                    <h2 class="collection-card-title">Seasonal Statements</h2>
+                    <p class="collection-card-desc">
+                        Deep imperial velvet, gold-gilded crane iconography, structured mandarin collars, and striking
+                        evening outerwear with timeless depth.
+                    </p>
+                    <div class="collection-action">
+                        <span>Explore Collection</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </main>
+
+    <!-- Bottom Navigation / Call To Action Banner -->
+    <section class="collections-cta-section">
+        <div class="collections-cta-inner">
+            <h3 class="collections-cta-title">Apparel Design & Operations Inquiries</h3>
+            <p class="collections-cta-desc">
+                Hailey Fang leads seasonal collection development, supplier relationships, and end-to-end small-batch
+                manufacturing from Los Angeles, California.
+            </p>
+            <div class="collections-cta-buttons">
+                <a href="index.html" class="cta-btn secondary-btn">
+                    <i class="fas fa-arrow-left"></i> Return to Homepage
+                </a>
+                <a href="index.html#contact" class="cta-btn primary-btn">
+                    Get in Touch <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collection Detail Modal -->
+    <div class="collection-detail-modal" id="dedicatedCollectionModal" onclick="handleDedicatedModalClick(event)">
+        <div class="collection-detail-container">
+            <button class="modal-close-btn" onclick="closeDedicatedModal()" aria-label="Close Modal">&times;</button>
+            <div class="collection-detail-layout">
+                <div class="collection-detail-media">
+                    <img id="detailModalImage" src="" alt="Collection Image">
+                    <div class="detail-badge" id="detailModalNumber">N° 01</div>
+                </div>
+                <div class="collection-detail-info">
+                    <div class="detail-category" id="detailModalCategory">Category</div>
+                    <h3 class="detail-title" id="detailModalTitle">Title</h3>
+                    <div class="detail-gold-line"></div>
+                    <p class="detail-description" id="detailModalDescription">Description</p>
+
+                    <div class="detail-specs-grid">
+                        <div class="spec-card">
+                            <span class="spec-label"><i class="fas fa-shapes"></i> Silhouette</span>
+                            <span class="spec-value" id="detailModalSilhouette">Sculptural Form</span>
+                        </div>
+                        <div class="spec-card">
+                            <span class="spec-label"><i class="fas fa-scroll"></i> Textile</span>
+                            <span class="spec-value" id="detailModalTextile">Premium Silk & Wool</span>
+                        </div>
+                        <div class="spec-card">
+                            <span class="spec-label"><i class="fas fa-palette"></i> Palette</span>
+                            <span class="spec-value" id="detailModalPalette">Tonal Harmony</span>
+                        </div>
+                        <div class="spec-card">
+                            <span class="spec-label"><i class="fas fa-industry"></i> Production</span>
+                            <span class="spec-value" id="detailModalProduction">Small-Batch Craftsmanship</span>
+                        </div>
+                    </div>
+
+                    <div class="detail-footer-note">
+                        <i class="fas fa-check-circle"></i> Creative Direction by Hailey Fang &bull; Associated with NOT
+                        JUST A LABEL
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3>Hailey <span>Fang</span></h3>
+                <p>U.S. Regional Director and operator of apparel design company NOT JUST A LABEL. Leading modern
+                    women's fashion design and full-chain operations.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#designer">Profile</a></li>
+                    <li><a href="index.html#philosophy">Philosophy</a></li>
+                    <li><a href="collections.html">Collections</a></li>
+                    <li><a href="index.html#brand">Company</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Los Angeles Atelier & HQ</h4>
+                <p>300 S Grand Ave<br>Los Angeles, CA 90071, USA</p>
+                <p class="footer-email">
+                    <a href="mailto:notalabel@haileyfang.com">notalabel@haileyfang.com</a>
+                </p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Hailey Fang &bull; NOT JUST A LABEL. All Rights Reserved. &bull; <a href="index.html">Back to
+                    Home</a></p>
+        </div>
+    </footer>
+
+    <!-- Dedicated Script for Collections Page -->
+    <script>
+        // Collections Data
+        const collectionsData = {
+            'modern-elegance': {
+                number: 'N° 01',
+                title: 'Modern Elegance',
+                category: 'Haute Couture Eveningwear',
+                image: 'collection-1-modern-elegance.png',
+                description: 'Modern Elegance reconciles grandeur with contemporary precision. Each gown is constructed with meticulous beadwork and undulating metallic silver flutes that mirror architectural flowing water. Designed for black-tie galas and monumental cultural evenings, the collection demonstrates the heights of bespoke textile ornamentation while preserving fluid feminine mobility.',
+                silhouette: 'Sculptural Column with Sweeping Architectural Train',
+                textile: 'Fine Illusion Mesh, Silvered Threadwork & Czech Crystal',
+                palette: 'Liquid Silver, Moonlit Pearl & Pure Titanium White',
+                production: 'Artisanal Hand-Embroidered • Made to Order'
+            },
+            'urban-sophistication': {
+                number: 'N° 02',
+                title: 'Urban Sophistication',
+                category: 'Metropolitan Outerwear & Tailoring',
+                image: 'collection-2-urban-sophistication.png',
+                description: 'Urban Sophistication translates high-fashion composure into the brisk cadence of contemporary city life. Featuring structured drop-shoulder trench coats in soothing sky tones, wrapped silk accents, and refined accessories, this collection elevates everyday transition wear into an intentional sartorial statement across Milan, New York, and Los Angeles.',
+                silhouette: 'Relaxed Double-Breasted Trench with Waist Tie Framing',
+                textile: 'Water-Resistant Double-Faced Cashmere Wool & Silk Chiffon',
+                palette: 'Powder Sky Blue, Soft Dove Gray & Blush Rose Accent',
+                production: 'Disciplined Small-Batch Run • Supplier Network Sourced'
+            },
+            'timeless-femininity': {
+                number: 'N° 03',
+                title: 'Timeless Femininity',
+                category: 'East-West Embroidered Silk',
+                image: 'collection-3-timeless-femininity.png',
+                description: 'Timeless Femininity bridges classical Eastern silk traditions with fluid Western dressmaking. Utilizing high-collar mandarin necklines combined with asymmetrical flowing high-low hemlines, each piece features delicate botanic hand-embroideries of spring blossoms, evoking natural harmony, renewal, and poised sophistication.',
+                silhouette: 'Fluid High-Low Wrap Gown with Contoured Mandarin Collar',
+                textile: 'Mulberry Heavy Crepe Silk with Botanical Hand-Stitching',
+                palette: 'Ivory Blossom, Muted Coral, Gold Filigree & Garden Jade',
+                production: 'Limited Seasonal Edition • Heritage Workshop Crafted'
+            },
+            'contemporary-tailoring': {
+                number: 'N° 04',
+                title: 'Contemporary Tailoring',
+                category: 'Executive Suiting & Separates',
+                image: 'Contemporary Tailoring.png',
+                description: 'Contemporary Tailoring reimagines power dressing through sharp lines and softened architectural drape. Designed for the modern female leader, the collection features tailored charcoal twill jackets with subtle tonal branch embroideries, paired with generous high-waisted wide-leg trousers that command presence with effortless ease.',
+                silhouette: 'Architectural Single-Button Blazer with High-Waisted Wide Trousers',
+                textile: 'Super 120s Italian Tropical Wool & Sandwashed Silk Charmeuse',
+                palette: 'Charcoal Shadow, Clean Alabaster & Deep Obsidian Black',
+                production: 'Precision Small-Batch Production • Los Angeles Fitted'
+            },
+            'minimalist-luxury': {
+                number: 'N° 05',
+                title: 'Minimalist Luxury',
+                category: 'Refined Monochrome & Pure Form',
+                image: 'Minimalist Luxury.png',
+                description: 'Minimalist Luxury strips away extraneous ornamentation to celebrate the pure resonance of fabric and proportion. Double-breasted tailored suits in un-dyed oatmeal wool twill offer quiet confidence, tactile richness, and versatile elegance suited for both professional boardrooms and private galleries.',
+                silhouette: 'Proportional Double-Breasted Suit & Fluid Pencil Silhouette',
+                textile: 'Un-Dyed Organic Virgin Wool, Cashmere & Sanded Habotai',
+                palette: 'Oatmeal Taupe, Warm Ecru, Soft Chamois & Warm Ivory',
+                production: 'Sustainable Sourced • Small-Batch Limited Production'
+            },
+            'seasonal-statements': {
+                number: 'N° 06',
+                title: 'Seasonal Statements',
+                category: 'Dramatic Runway & Heritage Couture',
+                image: 'Seasonal Statements.png',
+                description: 'Seasonal Statements honors regal theatricality and celebratory gravitas. Cut from midnight crimson silk velvet with intricate imperial gold dragon and crane embroideries along the placket, this collection evokes the richness of dynastic heritage adapted into commanding contemporary evening coats.',
+                silhouette: 'Structured Longline Imperial Coat with Tailored Standing Collar',
+                textile: 'Plush Silk Velvet, Metallic Gilded Brocade & Gold Cord Lace',
+                palette: 'Imperial Crimson, Gilded Ochre Gold & Black Lacquer',
+                production: 'Haute Couture Edition • Limited Small-Batch Archive'
+            }
+        };
+
+        // Navigation Toggle
+        function toggleNav() {
+            const navLinks = document.querySelector('.nav-links');
+            if (navLinks.style.display === 'flex') {
+                navLinks.style.display = 'none';
+            } else {
+                navLinks.style.display = 'flex';
+                navLinks.style.flexDirection = 'column';
+                navLinks.style.position = 'absolute';
+                navLinks.style.top = '100%';
+                navLinks.style.left = '0';
+                navLinks.style.width = '100%';
+                navLinks.style.background = '#0a0a0a';
+                navLinks.style.padding = '2rem';
+                navLinks.style.gap = '1.5rem';
+                navLinks.style.borderTop = '1px solid rgba(201, 169, 98, 0.3)';
+            }
+        }
+
+        // Modal Functionality
+        const modal = document.getElementById('dedicatedCollectionModal');
+
+        function openDedicatedModal(key) {
+            const item = collectionsData[key];
+            if (!item) return;
+
+            document.getElementById('detailModalImage').src = item.image;
+            document.getElementById('detailModalImage').alt = item.title;
+            document.getElementById('detailModalNumber').textContent = item.number;
+            document.getElementById('detailModalCategory').textContent = item.category;
+            document.getElementById('detailModalTitle').textContent = item.title;
+            document.getElementById('detailModalDescription').textContent = item.description;
+            document.getElementById('detailModalSilhouette').textContent = item.silhouette;
+            document.getElementById('detailModalTextile').textContent = item.textile;
+            document.getElementById('detailModalPalette').textContent = item.palette;
+            document.getElementById('detailModalProduction').textContent = item.production;
+
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeDedicatedModal() {
+            modal.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+
+        function handleDedicatedModalClick(e) {
+            if (e.target === modal) {
+                closeDedicatedModal();
+            }
+        }
+
+        // Escape key listener
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && modal.classList.contains('active')) {
+                closeDedicatedModal();
+            }
+        });
+    </script>
+</body>
+
+</html>
+
